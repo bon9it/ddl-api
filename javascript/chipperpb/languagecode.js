@@ -20,6 +20,7 @@ proto.chippergrpc2.LanguageCode = {
   ENGLISH_UK: 1,
   ENGLISH_AU: 2,
   GERMAN: 3,
-  FRENCH: 4
+  FRENCH: 4,
+  VIETNAMESE: 5
 };
 

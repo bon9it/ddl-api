@@ -22,7 +22,7 @@ mkdir -p bin
 ZIP="protoc-${VERSION}-${OS}-x86_64.zip"
 URL="https://github.com/google/protobuf/releases/download/v${VERSION}/${ZIP}"
 
-wget --no-check-certificate ${URL}
+curl -L --insecure -o ${ZIP} ${URL}
 # Unpack the protoc binary. Later we might want to grab additional data. 
 unzip -p ${ZIP} bin/protoc > $1
 chmod +x $1
