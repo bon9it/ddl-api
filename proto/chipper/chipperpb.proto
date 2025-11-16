@@ -358,6 +358,7 @@ enum LanguageCode {
     ENGLISH_AU = 2;
     GERMAN = 3;
     FRENCH = 4;
+    VIETNAMESE = 5;
 }
 
 enum IntentService {

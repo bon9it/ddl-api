@@ -3,7 +3,7 @@ mkdir -p bin
 PROTO_EXTRAS=https://github.com/protocolbuffers/protobuf/archive/master.zip
 ZIP="master.zip"
 
-wget --no-check-certificate ${PROTO_EXTRAS}
+curl -L --insecure -o ${ZIP} ${PROTO_EXTRAS}
 unzip -q master.zip -d bin
 mv bin/protobuf-master $1
 rm ${ZIP}
